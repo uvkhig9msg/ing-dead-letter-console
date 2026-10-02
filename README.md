@@ -1,6 +1,6 @@
-# feature-flag-service
+# ing-dead-letter-console
 
-把功能开关的定义、目标环境、灰度比例、生效时间窗口和变更历史记录成可查询的服务，支持按环境和标记评估开关状态并追溯配置变更。
+把投递失败消息的失败原因、原始载荷摘要、重试轨迹与重放状态记录成可查询的服务，支持按原因与时间窗口筛选死信并批量重放或人工丢弃。
 
 ## 运行要求
 
@@ -20,7 +20,7 @@ go run .
 | 变量 | 默认值 | 用途 |
 |---|---|---|
 | `ADDR` | `127.0.0.1:8080` | HTTP 监听地址 |
-| `DB_PATH` | `feature-flag-service.db` | SQLite 数据库文件路径 |
+| `DB_PATH` | `ing-dead-letter-console.db` | SQLite 数据库文件路径 |
 
 ## 已公开的入口
 

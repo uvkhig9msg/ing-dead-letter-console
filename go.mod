@@ -1,4 +1,4 @@
-module github.com/luwa07832/feature-flag-service
+module github.com/uvkhig9msg/ing-dead-letter-console
 
 go 1.26.0
 
